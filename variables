@@ -1,0 +1,4 @@
+#!/bin/bash
+name="Hassan Dawoud"
+echo $name
+echo "The string $name contains ${#name}  chars"
