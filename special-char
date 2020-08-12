@@ -1,0 +1,64 @@
+#!/bin/bash
+
+let y=(10/2,x=20,z=50)
+echo "y= "$y
+echo "x= "$x
+echo "z= "$z
+
+# notic that y takes the value of z .
+echo "################"
+name="DslCoNnecTion"
+echo ${name,}
+# , Set the first char to Lowercase
+echo "################"
+echo ${name,,}
+#,, set all the string to lowercase
+
+echo "################"
+
+echo ""Linux is awesome""
+# in this case " "  will not appear and the output is echo  Linux is awesome
+
+# but if we use \ before " "  like this
+
+echo "\"Linux is awesome\""
+
+# the output will be "Linux is awesome"
+echo "################"
+
+
+# null command  : "it means do nothing"
+ num=15
+ if [ "$num" -gt 15 ]
+ then :
+ else
+ echo "No"
+ fi
+
+ echo "################"
+let val=100*10
+let val2=100**3
+echo " $val    $val2"
+# val equal 100*10 but val2 equal 100*100*100  (100^3)
+ echo "################"
+
+var1=25
+echo $((var2=var1<20?1:0))
+
+#the previous two lines is the same as the following
+if [ "$var1" -lt 20 ]
+then var2=1
+else
+var2=0
+fi
+echo $var2
+
+ echo "################"
+
+var3=5
+(var3=2;) #this variable initialization  
+#will not read by interpreter
+echo $var3
+
+
+
