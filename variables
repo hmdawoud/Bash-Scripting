@@ -3,3 +3,5 @@ name="Hassan Dawoud"
 echo $name
 echo "The string $name contains ${#name}  chars"
 echo $((2#111))
+echo the value of 1010 in binary equals; echo $((2#1010)) in decimal 
+#notice that the ; used to end line and start a new one
