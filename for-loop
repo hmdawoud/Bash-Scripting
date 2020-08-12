@@ -2,8 +2,14 @@
 colors="red white blue black"
 
 echo $colors
+echo ===========
 
 for col in $colors
+do
+   echo $col
+done
+echo ===========
+for col in "$colors"
 do
    echo $col
 done
