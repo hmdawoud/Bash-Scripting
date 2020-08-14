@@ -61,8 +61,10 @@ var3=5
 #will not read by interpreter
 echo $var3
 
+ echo "################"
 
+somword=tEsT
+echo ${somword^}
+echo ${somword^^}
 
-
-# Hello Hassa 
-echo Hello
+ 
