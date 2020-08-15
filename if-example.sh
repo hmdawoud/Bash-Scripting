@@ -30,3 +30,16 @@ echo "One or both conditions are true"
 else
 echo "two conditions are false"
 fi
+
+num=4
+if [ "$num" -gt 0 ]
+then
+    if [ "$num" -lt 5 ]
+    then
+      if [ "$num" -gt 3 ]
+      then
+      echo " GT0, LT 5 , GT 3"
+      fi
+      fi
+      else echo "I have no idea"
+      fi
