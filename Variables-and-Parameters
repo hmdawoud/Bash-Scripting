@@ -16,5 +16,8 @@ echo $var2
 #var2 value depends on var1 
 # if var1 less than 10 then var2=1 else var2=0
 
+echo "type in some value"
+read var2
+echo $var2
 
 
