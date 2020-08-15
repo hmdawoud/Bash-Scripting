@@ -14,3 +14,31 @@ echo "exit status is $?"
 # /  $? the exit status of last command
 # $? =  0 if the result of last command is non zero value
 
+echo $$
+# echo $$. The above command writes the PID of the current shell 
+
+for n in {0..5}
+do 
+echo "BASH_VERSINFO[$] = ${BASH_VERSINFO[$n]}"
+done
+
+ROOT_UID=0
+echo -n "You are: "
+
+if [ "$UID" -eq "$ROOT_UID" ]
+then
+echo "root user"
+else
+echo " user "
+fi
+
+somefunction()
+{
+    echo "function name is $FUNCNAME"
+}
+
+somefunction
+
+echo "OUTSIDE, \$FUNCNAME=$FUNCNAME"
+# notica that $FUNCNAME equal null outside the function
+
