@@ -45,3 +45,11 @@ echo -e "${arr1[0]} \n ${arr1[1]} "
 
 arr2=([0]="first" [1]="second" [7]="third")
 echo -e "${arr2[0]} \n ${arr2[1]} \n ${arr2[7]} "
+
+
+###########
+
+arr3=( zero one two)
+echo ${arr3[0]} #echo the first element
+echo ${#arr3[0]} #echo the length of first element
+echo ${#arr3[*]} #echo the size of array
