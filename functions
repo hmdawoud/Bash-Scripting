@@ -30,3 +30,15 @@ _ var1 var2
 _ $1 $2
 
 
+echo "####Arrays####"
+
+arr[0]=20
+arr[1]=30
+echo -e "${arr[0]}\n${arr[1]}"
+
+#another way to declare for array
+
+declare -a arr1
+#-a array
+arr1=( 2 4 )
+echo -e "${arr1[0]} \n ${arr1[1]} "
