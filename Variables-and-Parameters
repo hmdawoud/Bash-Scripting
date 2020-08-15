@@ -25,5 +25,19 @@ do
 echo $var
 done
 
+NO_OF_ARGS=2
+#THE NUMBER OF ARGUMENTS
+E_BADARGS=85
+E_UNREADABLE=86
+
+#  $#  THE NUMBER OF COMMAND LINE ARGUMENTS
+if [ $# -ne "$NO_OF_ARGS" ]
+then
+echo "Usage: 'basename $0' testFile1 testfile2"
+#  #0  the name of the script
+exit $E_BADARGS
+ 
+fi 
+
 
 
