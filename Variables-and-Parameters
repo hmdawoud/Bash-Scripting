@@ -39,5 +39,13 @@ exit $E_BADARGS
  
 fi 
 
+if [[! -r "$1" || ! -r "$2"]]
+
+then 
+ echo "Files are real"
+ exit "$E_UNREADABLE"
+ fi 
+ 
+
 
 
