@@ -20,4 +20,10 @@ echo "type in some value"
 read var2
 echo $var2
 
+for var in 1 2 3
+do
+echo $var
+done
+
+
 
