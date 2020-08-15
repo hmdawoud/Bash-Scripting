@@ -67,4 +67,9 @@ somword=tEsT
 echo ${somword^}
 echo ${somword^^}
 
+
+echo $0
+echo $?
+
+
  
