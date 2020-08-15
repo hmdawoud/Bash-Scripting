@@ -5,3 +5,35 @@ echo "The string $name contains ${#name}  chars"
 echo $((2#111))
 echo the value of 1010 in binary equals; echo $((2#1010)) in decimal 
 #notice that the ; used to end line and start a new one
+
+declare -r PI=3.1415926
+#declare -r PI works the same as readonly PI variable
+printf "Second decimal of PI is %1.2f \n" $PI
+
+
+E_NOPATTERN=71
+DICT=/usr/share/dict/words
+echo "###############"
+ 
+if [ -z "$1" ]
+# -z "$1"  check if a parameter passed
+then
+    echo
+    echo "Usage: "
+    echo "'basename $0' \"pattern,\""
+    echo "where \"pattern \" is in the form"
+    echo "ooo..ooo.o..."
+    echo
+    echo "the o's are letters you already know"
+    echo "and the periods are missing letters."
+    echo "Letters and periods can be in any position"
+    echo "For example : w...i....n"
+    echo
+    exit $E_NOPATTERN
+    
+fi
+
+grep ^"$1"$ "$DICT"
+# ^ anchor matches the begining of the line
+# $ anchor matches the end of the line
+
