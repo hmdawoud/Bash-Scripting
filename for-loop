@@ -13,3 +13,15 @@ for col in "$colors"
 do
    echo $col
 done
+
+
+#nested for loops
+
+for i in 1 2 3 4 5
+do
+   echo "outer Loop $i.."
+   for j in 1 2 3
+   do
+   echo "Inner Loop $j"
+   done
+done
