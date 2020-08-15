@@ -41,4 +41,9 @@ somefunction
 
 echo "OUTSIDE, \$FUNCNAME=$FUNCNAME"
 # notica that $FUNCNAME equal null outside the function
+echo "-------------------"
+file="/home/hassan/Documents/wood"
+ 
+echo "this line is redirected to $file " > $file
+ 
 
