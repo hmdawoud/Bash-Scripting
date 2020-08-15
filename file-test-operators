@@ -45,5 +45,30 @@ echo "-------------------"
 file="/home/hassan/Documents/wood"
  
 echo "this line is redirected to $file " > $file
- 
+ echo "-------------------"
+
+echo 12345 > fd.txt
+exec 3<>fd.txt
+read -n 2 <&3
+echo -n . >&3
+exec 3>&-
+cat fd.txt
+
+####-----
+#!/bin/bash
+# Let us assign the file descriptor to file for output
+# fd # 3 is output file 
+exec 3> /tmp/output.txt
+
+# Executes echo commands and  # Send output to 
+# the file descriptor (fd) # 3 i.e. write output to /tmp/output.txt
+echo "This is a test" >&3
+
+# Write date command output to fd # 3
+date >&3
+
+# Close fd # 3
+exec 3<&-
+
+
 
