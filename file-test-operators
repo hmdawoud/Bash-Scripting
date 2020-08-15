@@ -1,8 +1,9 @@
 #!/bin/bash
 var=/home/hassan/Documents/test.txt
-if [[-e $var]]
+if [[ -e $var ]]
 then
 echo "file exist"
 else
 echo "file not exist"
-file
+fi
+
