@@ -7,3 +7,10 @@ else
 echo "file not exist"
 fi
 
+
+(( 2<1 ))
+echo "exit status is $?"
+
+# /  $? the exit status of last command
+# $? =  0 if the result of last command is non zero value
+
