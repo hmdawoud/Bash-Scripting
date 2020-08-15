@@ -42,3 +42,6 @@ declare -a arr1
 #-a array
 arr1=( 2 4 )
 echo -e "${arr1[0]} \n ${arr1[1]} "
+
+arr2=([0]="first" [1]="second" [7]="third")
+echo -e "${arr2[0]} \n ${arr2[1]} \n ${arr2[7]} "
