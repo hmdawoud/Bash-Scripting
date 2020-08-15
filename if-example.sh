@@ -45,7 +45,7 @@ then
       fi
 
       E_BADARGS=65
-      if [ ! -z "$1" ] && echo "FIRST PARAMETER IS $1" && [! -z "$2" ] && echo "second parameter is $2"
+      if [ ! -z "$1" ] && echo "FIRST PARAMETER IS $1" && [ ! -z "$2" ] && echo "second parameter is $2"
       then
       echo "the two parameters are passed to the script"
       else
